@@ -1,0 +1,1 @@
+{"dependencies":{"express":"^4.19.2"},"description":"Sixteen V1 — a 16-seat virtual advisory boardroom. Premium noir-and-gold web app.","engines":{"node":">=18"},"license":"UNLICENSED","main":"server.js","name":"sixteen-v1","private":true,"scripts":{"start":"node server.js"},"version":"1.0.0"}

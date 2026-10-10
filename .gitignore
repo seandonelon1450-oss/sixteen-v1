@@ -1,0 +1,8 @@
+# Sixteen™ V1 — local-only files. Secrets and runtime data are never committed.
+node_modules/
+.env
+.env.*
+hidden/
+data/waitlist.jsonl
+*.log
+.DS_Store

@@ -1,0 +1,20 @@
+# Sixteen™ V1 — Render deploy (GitHub -> Render, auto-deploy on main).
+#
+# NOTE: the Arbor build brief requires a paid Starter+ instance for
+# services with demos. This file deliberately omits `plan` (Render
+# defaults to free) — upgrading to Starter+ is a purchase and needs
+# Sean's explicit go-ahead before this is applied.
+services:
+  - type: web
+    name: sixteen-v1
+    runtime: node
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      # Set in the Render dashboard (Environment page). Never commit a value.
+      - key: SIXTEEN_ADMIN_TOKEN
+        sync: false
